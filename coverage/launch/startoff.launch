@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Include the MAVROS node with SITL and Gazebo -->
+<!-- 	<include file="/home/leo/PX4-Autopilot/launch/multi_uav_mavros_sitl.launch">
+	</include> -->
+
+	<!-- Our node to control the drone -->
+	<!-- <node name="takeoff_node_1" pkg="tracking" type="takeoff_node_1.py" output="screen" /> -->
+	<!-- <node pkg="tracking" type="takeoff_node_1.py" name="takeoff_node_1" required="true" output="screen" />
+	<node pkg="tracking" type="takeoff_node_2.py" name="takeoff_node_2" required="true" output="screen" />
+	<node pkg="tracking" type="takeoff_node_3.py" name="takeoff_node_3" required="true" output="screen" /> -->
+
+    <node name="ArmandOffboard" pkg="coverage" type="px4_mavros.py" output="screen" />
+    <param name="uav0/vel_control" type="int" value="0" />
+    <param name="uav1/vel_control" type="int" value="0" />
+    <param name="uav2/vel_control" type="int" value="0" />
+    <param name="uav3/vel_control" type="int" value="0" />
+</launch>

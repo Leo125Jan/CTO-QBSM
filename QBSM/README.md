@@ -1,0 +1,1 @@
+# Quality based Switch Mode

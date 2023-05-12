@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="controller_1" pkg="formation" type="controller_1.py" output="screen" />
+	<node name="controller_2" pkg="formation" type="controller_2.py" output="screen" />
+	<node name="controller_3" pkg="formation" type="controller_3.py" output="screen" />
+</launch>
